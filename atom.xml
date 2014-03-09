@@ -1,17 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[I definitely needed another blog...]]></title>
   <link href="http://kukkurovaca.github.io/atom.xml" rel="self"/>
   <link href="http://kukkurovaca.github.io/"/>
-  <updated>2014-03-08T19:26:41-08:00</updated>
+  <updated>2014-03-08T19:54:02-08:00</updated>
   <id>http://kukkurovaca.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Nick]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Your Second Post]]></title>
+    <link href="http://kukkurovaca.github.io/blog/2014/03/07/lorem+copy/"/>
+    <updated>2014-03-07T00:00:00-08:00</updated>
+    <id>http://kukkurovaca.github.io/blog/2014/03/07/lorem copy</id>
+    <content type="html"><![CDATA[<ul>
+<li>Bullets?</li>
+<li>etc.?</li>
+</ul>
+
+
+<p>Those hours that with gentle work did frame<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
+
+<p>Shall play the tyrants to the very same&hellip;</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>The lovely gaze where every eye doth dwell<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Your First Post]]></title>
