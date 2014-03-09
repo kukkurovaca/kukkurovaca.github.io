@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Meta | Plaintext Adventure]]></title>
-  <link href="http://kukkurovaca.github.io/blog/categories/meta/atom.xml" rel="self"/>
-  <link href="http://kukkurovaca.github.io/"/>
-  <updated>2014-03-08T22:25:06-08:00</updated>
-  <id>http://kukkurovaca.github.io/</id>
+  <link href="http://www.plaintextadventure.com/blog/categories/meta/atom.xml" rel="self"/>
+  <link href="http://www.plaintextadventure.com/"/>
+  <updated>2014-03-08T22:27:58-08:00</updated>
+  <id>http://www.plaintextadventure.com/</id>
   <author>
     <name><![CDATA[Nick]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Your First Post]]></title>
-    <link href="http://kukkurovaca.github.io/blog/2013/12/28/lorem/"/>
+    <link href="http://www.plaintextadventure.com/blog/2013/12/28/lorem/"/>
     <updated>2013-12-28T07:49:17-08:00</updated>
-    <id>http://kukkurovaca.github.io/blog/2013/12/28/lorem</id>
+    <id>http://www.plaintextadventure.com/blog/2013/12/28/lorem</id>
     <content type="html"><![CDATA[<p>This is a lipsum page to demonstrate the theme&rsquo;s typography. Modify this post to your heart&rsquo;s content &ndash; or simply delete it.</p>
 
 <p>Lorem ipsum dolor sit amet, ut brute legimus honestatis cum. Eirmod verear mei ne, id falli conclusionemque est, autem populo duo et. Causae noluisse ex sed. Solet mentitum salutandi ad mei, vis ex esse prima nullam, tation melius aliquid pri ea. Minimum sententiae mei ad, mei et reque novum.</p>
