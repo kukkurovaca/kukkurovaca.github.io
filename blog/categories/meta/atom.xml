@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Meta | Plaintext Adventure]]></title>
   <link href="http://www.plaintextadventure.com/blog/categories/meta/atom.xml" rel="self"/>
   <link href="http://www.plaintextadventure.com/"/>
-  <updated>2014-03-09T00:00:42-08:00</updated>
+  <updated>2014-03-09T12:50:44-07:00</updated>
   <id>http://www.plaintextadventure.com/</id>
   <author>
     <name><![CDATA[Nick]]></name>
@@ -14,22 +14,55 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Octopress]]></title>
+    <link href="http://www.plaintextadventure.com/blog/2014/03/09/octopress/"/>
+    <updated>2014-03-09T00:30:57-08:00</updated>
+    <id>http://www.plaintextadventure.com/blog/2014/03/09/octopress</id>
+    <content type="html"><![CDATA[<p>You know, I hadn’t originally intended to include static site generators in my recent Markdown experimentation. Some time back, I went on a pretty aggressive search for static site generators that were user friendly enough to be easy for someone like me (whose relationship to the command line is uneasy at best) to use. My conclusion? static site generators are no-man’s-land for non-technical users.</p>
+<p>I don’t think I was really wrong about that. And it’s too bad, because I think the pool of folks who would benefit from static site tools is much broader than their current audience. L33t hax0rs aren’t the only ones fed up with Wordpress, Tumblr, etc. And while there are interesting minimalist Markdown-centric blogging tools in the offing that are more accessible, there’s a lot of not-ready-for-prime-time going on in that space. Everything’s in beta, and quite a few get canned before they go anywhere interesting. In the long run, I have high hopes for <a href="http://ghost.org">Ghost</a> and for at least one of the <a href="http://scriptogr.am">Scriptogram</a> family of quasi-static blogging tools, but in the immediate term, it doesn’t seem like any of those tools is really ready.</p>
+<p>So, I had pretty much resolved myself to sticking with Wordpress and a markdown plugin for now. Then, yesterday or the day before, I came across a mention of Octopress while researching something related to Pandoc. As I followed down the inevitable rabbithole, it seemed like Octopress was actually not all that hard to set up and start using. So…I did.</p>
+<p>Thoughts so far:</p>
+<h2 id="setup">Setup</h2>
+<p>Octopress really is very easy to set up. Well, for certain values of easy. It’s not foolproof, certainly, and it’s really not ready for non-technical users as such. They helpfully <a href="http://octopress.org/docs/setup/">disclaim</a>:</p>
+<blockquote>
+<p><strong>Octopress is a blogging framework for hackers</strong>. You should be comfortable running shell commands and familiar with the basics of Git. If that sounds daunting, Octopress probably isn’t for you.</p>
+</blockquote>
+<p>But, that being said, the installation process is well-documented, and I found that following the steps as they were laid out, I was able to get it set up fairly quickly.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> And once it’s set up, there are quite simple commands to create new posts and pages, preview locally, and generate and publish your site.</p>
+<h2 id="git">Git</h2>
+<p>The main hangup for me was Git. I have basically zero Git experience, and frankly I find it pretty surreal. (I think the issue is that the actions you’re taking in Git have a somewhat abstract relationship to the normal user experience of the file system.)</p>
+<p>There are great <a href="http://try.github.io/levels/1/challenges/1">resources</a> for learning Git, and a lot of things I love and use live on Github. So I really <em>shouldn’t</em> be as unfamiliar and uncomfortable as I am. But here we are.</p>
+<p>Octopress’s documentation does, again, lay out all the steps you need to get set up. I even found it relatively painless to host on <a href="http://octopress.org/docs/deploying/github/">Github Pages</a><a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>. And once you are set up, it doesn’t seem like you need to interact directly with the Git stuff in day-to-day use. Although it’s probably advisable to try to have a handle on what’s going on behind the scenes. : )</p>
+<h2 id="themes">Themes</h2>
+<p>There’s a decent selection of <a href="http://opthemes.com/">Themes</a> available. I haven’t experimented extensively – I just found <a href="https://github.com/TheChymera/Koenigspress">one I liked</a>, and installed it using the directions provided.</p>
+<h2 id="using-pandoc-with-octopress">Using Pandoc with Octopress</h2>
+<p>I’ve gotten pretty accustomed to doing as many things as I can using MMD and Pandoc. I mean, <code>pandoc -f markdown_mmd</code> just rolls so trippingly off the tongue, right?</p>
+<p>Pandoc isn’t one of the default options, but in fact the whole reason I’d gotten onto this Octopress kick was because I was researching Pandoc and came across a reference to <a href="http://drz.ac/2013/01/03/blogging-with-math/">using Pandoc as your Markdown processor in Octopress</a>.</p>
+<p>That’s actually overkill (I guess since I don’t do math), but with some additional googling, I was able to figure out something functional without too much difficulty. Just put a <a href="https://github.com/ktmt/ktmtblog-octopress/blob/master/plugins/pandoc.rb">pandoc.rb</a> file in the plugins directory, and modify your config.yml file like so:</p>
+<pre><code>markdown: pandoc 
+pandoc:
+    flags: &#39;-markdown_mmd --smart&#39;</code></pre>
+<p>or with whatever options you prefer.</p>
+<p>Of course, this isn’t <em>really</em> necessary for most users. The normal processors available in Octopress will do Markdown Extra, as far as I can tell, and for blogging purposes, that should be fine for almost all one’s formatting needs. But this way I don’t have to keep track of more than one syntax and processor.</p>
+<section class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>My level of comfort with the command line is sort of novice-cook. I can follow a recipe if it’s well-written. If I absolutely must, I can occasionally work out a recipe of my own, if it’s very simple and I have plenty of time to work on it. In terms of getting Octopress set up, that comfort level is plenty. <strong>But</strong>, that being said, I’m not looking forward to troubleshooting my first major problem, whenever that manifests.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>Although I do feel vaguely guilty about it for some reason.<a href="#fnref2">↩</a></p></li>
+</ol>
+</section>]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Your First Post]]></title>
     <link href="http://www.plaintextadventure.com/blog/2013/12/28/lorem/"/>
     <updated>2013-12-28T07:49:17-08:00</updated>
     <id>http://www.plaintextadventure.com/blog/2013/12/28/lorem</id>
-    <content type="html"><![CDATA[<p>This is a lipsum page to demonstrate the theme&rsquo;s typography. Modify this post to your heart&rsquo;s content &ndash; or simply delete it.</p>
-
+    <content type="html"><![CDATA[<p>This is a lipsum page to demonstrate the theme’s typography. Modify this post to your heart’s content - or simply delete it.</p>
 <p>Lorem ipsum dolor sit amet, ut brute legimus honestatis cum. Eirmod verear mei ne, id falli conclusionemque est, autem populo duo et. Causae noluisse ex sed. Solet mentitum salutandi ad mei, vis ex esse prima nullam, tation melius aliquid pri ea. Minimum sententiae mei ad, mei et reque novum.</p>
-
 <p>Eu nec eirmod inermis, nominavi deleniti electram ut mei. Veri quidam vivendum sit id, voluptaria percipitur deterruisset an nec. Mei mazim erroribus eu, his in errem nonumy comprehensam. Modo pericula duo id, te vis facete verear. Ex cum volutpat corrumpit aliquando, ad vim assentior argumentum temporibus.</p>
-
 <p>Id est eros justo movet, duo eu alii vitae. Quo altera imperdiet efficiantur in, nec error iudico an. Sed an etiam consul, invenire platonem nam an. Nec an integre splendide, libris oportere duo ei. Has eu solet sententiae, ex nam noster tractatos, sonet patrioque nec ad.</p>
-
 <p>An minim mollis mediocrem est, lucilius atomorum ex eum. Quaeque probatus qui cu, ut mutat dolorem epicurei pro, vel labores delicata rationibus et. Cu eos sumo inermis, viderer molestiae assueverit ius ad. Cum atqui error insolens in. Iuvaret adolescens referrentur cu pri.</p>
-
-<p>Ei putant perfecto atomorum eos, an civibus hendrerit sit. Pri cu probo nominavi, et sea cetero hendrerit incorrupte. Amet unum prompta per at, impedit reprehendunt an cum, vix laudem dolorem at. Suas blandit molestie in eum.</p>
-]]></content>
+<p>Ei putant perfecto atomorum eos, an civibus hendrerit sit. Pri cu probo nominavi, et sea cetero hendrerit incorrupte. Amet unum prompta per at, impedit reprehendunt an cum, vix laudem dolorem at. Suas blandit molestie in eum.</p>]]></content>
   </entry>
   
 </feed>
